@@ -1,109 +1,169 @@
-#DoEpi (CDC) — Web Revival
+# DoEpi (CDC) — Web Revival
 
-This repository contains a browser-based revival of DoEpi, a DOS-era epidemiology training program originally developed by CDC.
+This repository contains a browser-based revival of **DoEpi**, a DOS-era epidemiology training program originally developed by the CDC.
 
-The goal is preservation and accessibility: you can now run the original program in a modern web browser using WebAssembly (via js-dos), without installing DOSBox or any additional software.
+The goal of this project is preservation and accessibility. The original training program now runs inside a modern web browser using WebAssembly (via js-dos), without requiring DOSBox or any additional installation.
 
-This project preserves the original training environment while making it accessible for teaching, demonstration, and historical exploration.
+This is the original program environment, preserved and made portable.
 
-##What This Is
+---
 
--The original DoEpi DOS program
--Packaged into a .jsdos bundle
--Runnable directly in a web browser
--No installation required
--Works on macOS, Windows, and Linux
+# What This Repository Contains
 
-This is the original program, not a rewrite.
+* The original DoEpi DOS training program
+* A `.jsdos` bundle compatible with modern browsers
+* An `index.html` launcher page
+* All required emulator assets
 
-##How to Use
-###Option 1 — Run Directly from GitHub (Simple)
-If you are viewing this repository on GitHub:
-1. Click Code
-2. Select Download ZIP
-3. Extract the ZIP file to your computer
-4. Open the extracted folder
-5. Double-click index.html
+No installation of DOS software is required.
 
-Your browser should open the emulator automatically.
+---
 
-###Option 2 — Run with a Local Web Server (Recommended)
+# System Requirements
 
-Some browsers block certain features when opening files directly.
-If index.html does not load properly, use a simple local server.
+* A modern browser (Chrome, Edge, Firefox, Safari)
+* Keyboard input enabled
+* Local file access or a simple local web server
 
-macOS / Linux
+---
 
-Open Terminal in the repository folder and run:
+# Getting Started
 
+## Option 1 — Download and Open Directly
+
+1. Click the green **Code** button on GitHub.
+2. Select **Download ZIP**.
+3. Extract the ZIP file to your computer.
+4. Open the extracted folder.
+5. Double-click `index.html`.
+
+The emulator should load automatically.
+
+> If nothing appears or the emulator fails to start, use Option 2 below.
+
+---
+
+## Option 2 — Run Using a Local Web Server (Recommended)
+
+Some browsers restrict features when opening files directly.
+Running a local server avoids this issue.
+
+### macOS / Linux
+
+Open Terminal inside the repository folder and run:
+
+```bash
 python3 -m http.server 8000
+```
 
 Then open:
 
+```
 http://localhost:8000
-Windows (PowerShell)
+```
+
+---
+
+### Windows (PowerShell)
+
+Open PowerShell inside the repository folder and run:
+
+```powershell
 py -m http.server 8000
+```
 
 Then open:
 
+```
 http://localhost:8000
-Starting the Training
+```
+
+---
+
+# Running DoEpi
 
 When the emulator loads:
 
-Click inside the emulator window to activate keyboard input.
+1. Click inside the emulator window to activate keyboard input.
+2. You will see a DOS prompt.
 
-If prompted to run installation disks, proceed as follows.
+---
 
-Extract the Program Files
+## Step 1 — Extract the Program Files
 
-In the DOS prompt, run each of the four executables:
+Run each of the four executables:
 
+```
 DOEPI1.EXE
 DOEPI2.EXE
 DOEPI3.EXE
 DOEPI4.EXE
+```
 
-These extract the program contents into the working directory.
+These files simulate the original floppy disk installation process and unpack the full program.
 
-After running all four:
+---
 
+## Step 2 — Run the Installer
+
+After extracting all four executables, run:
+
+```
 INSTALL.EXE
+```
 
-If prompted for Disk 2, Disk 3, or Disk 4, simply press Enter.
-Because all executables are present in the same directory, the installer will proceed correctly.
+If prompted for Disk 2, Disk 3, or Disk 4, simply press **Enter**.
 
-Launch DoEpi
+Because all executable files are already present in the same directory, the installer will proceed successfully.
 
-After installation completes:
+---
 
+## Step 3 — Launch the Training Program
+
+Once installation is complete:
+
+```
 CD \DOEPI
 DOEPI.EXE
+```
 
-The training program should now start.
+The DoEpi training program should now start.
 
-Controls
+---
 
-Click inside the emulator window to enable typing.
+# Emulator Controls
 
-Press Esc to release the mouse.
+* Click inside the emulator window to enable typing.
+* Press `Esc` to release the mouse pointer.
+* Use the emulator menu for fullscreen mode if needed.
+* If the screen appears frozen, refresh the browser and restart.
 
-Use the emulator menu for fullscreen mode if desired.
+---
 
-Notes for Instructors
+# Instructor Notes
 
-This repository preserves the original DOS interface.
-It does not modernize the software itself.
+This project preserves the original DOS-based interface.
 
-For teaching purposes, consider:
+It does not modify or modernize the training software itself. Instead, it provides browser-based access for:
 
-Providing contextual guidance outside the emulator
+* Historical exploration
+* Teaching epidemiology fundamentals
+* Demonstrating early computer-assisted public health training
+* Comparing past and present analytic tools
 
-Pairing exercises with modern analytic tools (R, Epi Info, etc.)
+For instructional use, consider pairing the exercises with modern analytic tools such as R, Epi Info, or other statistical software.
 
-Using this as a historical comparison tool
+---
 
-License
+# License
 
 The original DoEpi materials were released as public domain training materials.
 This repository preserves and distributes them in that spirit.
+
+---
+
+# Acknowledgment
+
+DoEpi was developed as a CDC training tool to teach epidemiologic methods using interactive, computer-based exercises.
+
+This repository makes that original experience accessible to modern learners.
