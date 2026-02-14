@@ -84,8 +84,13 @@ http://localhost:8000
 
 When the emulator loads:
 
-1. Click inside the emulator window to activate keyboard input.
-2. You will see a DOS prompt.
+1. You will be prompted to "Select jsdos/zip file to start..."
+2. Upload the .jdos file you downloaded as part of the repository.
+3. You will be prompted to start the emulation or enter a key to maintain your progress. (Go to https://v8.js-dos.com/key/ to get a key so you can save your progress, if you wish.)
+5. Click inside the emulator window to activate keyboard input.
+6. You will see a DOS prompt.
+7. At the `C:\>` prompt, type `cd doepi`, which will take you to the DOEPI directory.
+8. Follow the instructions below...
 
 ---
 
@@ -111,23 +116,24 @@ After extracting all four executables, run:
 ```
 INSTALL.EXE
 ```
+Choose which version you want to install:
+* Full Installation (Instructor's Module & All Exercises)
+* Students' Version (Exercises Only)
+* Intro to Epidemiology and Epi Info (3 Outbreaks & Research Study)
+* Epi Info and Surveillance (4 Surveillance Exercises)
+* Advanced Epi Info (4 Advanced Epi Info Exercises)
 
-If prompted for Disk 2, Disk 3, or Disk 4, simply press **Enter**.
-
-Because all executable files are already present in the same directory, the installer will proceed successfully.
+If prompted for Disk 2, Disk 3, or Disk 4, simply press **Enter**. (Because all executable files are already present in the same directory, the installer will proceed successfully.)
 
 ---
 
 ## Step 3 — Launch the Training Program
 
 Once installation is complete:
+* You will see a blue screen. Choose `3. Will run from DOS; do not install an icon` to go back to the terminal.
+* Type `DOEPI` at the command (`C:\DOEPI>`) prompt.
 
-```
-CD \DOEPI
-DOEPI.EXE
-```
-
-The DoEpi training program should now start.
+The DoEpi training program should now start. **If you did not get a key, you will lose all progress and have to repeat the procedure again next time.**
 
 ---
 
@@ -135,8 +141,12 @@ The DoEpi training program should now start.
 
 * Click inside the emulator window to enable typing.
 * Press `Esc` to release the mouse pointer.
-* Use the emulator menu for fullscreen mode if needed.
+* Use the emulator menu for full-screen mode if needed.
 * If the screen appears frozen, refresh the browser and restart.
+
+---
+
+# A Video of the Installation Process Will Be Uploaded Here Soon
 
 ---
 
