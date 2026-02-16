@@ -148,6 +148,8 @@ The DoEpi training program should now start. **If you did not get a key, you wil
 
 # A Video of the Installation Process Will Be Uploaded Here Soon
 
+* [Click here to see a video of the installation process.](https://share.zight.com/8LuzRlOE)
+
 ---
 
 # Instructor Notes
